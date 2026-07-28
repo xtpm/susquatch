@@ -2,20 +2,19 @@
 
 An independent, non-commercial archive celebrating the Japanese band susquatch.
 
-The site is built with Next.js-compatible React through vinext and is prepared
-for deployment with OpenAI Sites.
-
-## Local development
+## Development
 
 ```bash
 npm install
 npm run dev
 ```
 
-## Production build
+The local site opens at `http://localhost:3000`.
 
-```bash
-npm run build
-```
+## Deployment
 
-The archive is not affiliated with susquatch, K-PLAN, or the individual artists.
+The application is a standard Next.js project intended for Vercel. The
+`susquatch.net` zone can remain on Cloudflare, with DNS records pointed to the
+Vercel project after the domain is assigned there.
+
+This archive is not affiliated with susquatch, K-PLAN, or the individual artists.
