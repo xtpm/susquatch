@@ -290,7 +290,7 @@ export default function Home() {
         <a href={spotify} target="_blank" rel="noreferrer">Hear the catalogue <span>↗</span></a>
       </section>
 
-      <footer>
+      <footer id="footer">
         <a className="footer-name" href="#top">susquatch</a>
         <div className="footer-note">
           <p>An independent, non-commercial archive made with admiration. Not affiliated with susquatch, K-PLAN or the artists.</p>
@@ -303,7 +303,10 @@ export default function Home() {
           <a href="https://tower.jp/article/interview/2007/04/26/100040322" target="_blank" rel="noreferrer">Tower Records ↗</a>
           <a href="https://music.apple.com/jp/artist/susquatch/1641421476" target="_blank" rel="noreferrer">Apple Music ↗</a>
         </div>
-        <p className="copyright">SUSQUATCH.NET / INDEPENDENT ARCHIVE / COMPILED 2026</p>
+        <div className="footer-bottom">
+          <p>SUSQUATCH.NET / INDEPENDENT ARCHIVE / COMPILED 2026</p>
+          <a href="https://retrial.cc" target="_blank" rel="noreferrer">Made by retrial ↗</a>
+        </div>
       </footer>
     </main>
   );
