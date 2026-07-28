@@ -16,7 +16,7 @@
 # next.js
 /.next/
 /.next-dev/
-/.next-stale-*/
+/.next*-stale-*/
 /.vinext/
 /out/
 

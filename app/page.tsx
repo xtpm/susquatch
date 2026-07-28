@@ -43,12 +43,12 @@ export default function Home() {
       <header className="site-header">
         <a className="wordmark" href="#top" aria-label="susquatch home">susquatch</a>
         <nav aria-label="Primary navigation">
-          <a href="#story">Story</a>
-          <a href="#music">Listen</a>
-          <a href="#photos">Photos</a>
-          <a href="#records">Records</a>
+          <a href="#story">[ story ]</a>
+          <a href="#music">[ listen ]</a>
+          <a href="#photos">[ photos ]</a>
+          <a href="#records">[ records ]</a>
         </nav>
-        <a className="header-listen" href={spotify} target="_blank" rel="noreferrer">Spotify ↗</a>
+        <a className="header-listen" href={spotify} target="_blank" rel="noreferrer">listen ↗</a>
       </header>
 
       <section className="hero" id="top" aria-labelledby="hero-title">
@@ -57,7 +57,10 @@ export default function Home() {
             <span>Independent listening archive</span>
             <span>Tokyo, Japan / 2002—</span>
           </div>
-          <h1 id="hero-title"><span>sus</span><span>quatch</span></h1>
+          <div className="hero-title-lockup">
+            <h1 id="hero-title"><span>sus</span><span>quatch</span></h1>
+            <p className="hero-note"><span>file under:</span>songs that<br />refuse to sit still</p>
+          </div>
           <div className="hero-rule" />
           <div className="hero-summary">
             <p>Intricate guitars, impossible drums and melodies that never really left.</p>
