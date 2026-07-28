@@ -219,13 +219,13 @@ figure { margin: 0; }
 .section-label p { max-width: 90px; margin: 0; line-height: 1.45; }
 .section-content { min-width: 0; }
 .lead {
-  max-width: 980px;
+  max-width: 920px;
   margin: 0;
   font-family: var(--font-geist-sans), Arial, sans-serif;
-  font-size: clamp(48px, 5.8vw, 90px);
+  font-size: clamp(48px, 4.9vw, 76px);
   font-weight: 650;
-  line-height: .94;
-  letter-spacing: -.06em;
+  line-height: .98;
+  letter-spacing: -.055em;
   text-wrap: balance;
 }
 .section-heading {
@@ -249,20 +249,24 @@ figure { margin: 0; }
 .story { background: var(--paper); }
 .story-layout {
   display: grid;
-  grid-template-columns: minmax(260px, .72fr) minmax(480px, 1.28fr);
+  grid-template-columns: minmax(300px, .9fr) minmax(420px, 1.1fr);
   align-items: start;
-  gap: clamp(50px, 7vw, 110px);
-  margin-top: 76px;
+  gap: clamp(44px, 5vw, 76px);
+  margin-top: 58px;
+  padding-top: 32px;
+  border-top: 1px solid var(--ink);
 }
-.story-copy { max-width: 520px; }
-.story-copy > p { margin: 0 0 24px; font-size: 17px; line-height: 1.72; }
+.story-copy { max-width: 540px; padding-right: clamp(0px, 1vw, 16px); }
+.story-copy > p { margin: 0 0 22px; font-size: 16px; line-height: 1.68; }
+.story-copy > p:first-child { font-size: 18px; }
 blockquote {
-  margin: 54px 0 0;
-  padding: 0 0 0 24px;
-  border-left: 4px solid var(--rust);
-  font-size: clamp(23px, 2.1vw, 34px);
+  max-width: 480px;
+  margin: 44px 0 0;
+  padding: 2px 0 2px 22px;
+  border-left: 3px solid var(--rust);
+  font-size: clamp(23px, 1.85vw, 30px);
   font-style: italic;
-  line-height: 1.18;
+  line-height: 1.24;
 }
 blockquote cite {
   display: block;
@@ -273,12 +277,18 @@ blockquote cite {
   text-transform: uppercase;
   letter-spacing: .08em;
 }
-.story-photo img { display: block; width: 100%; height: auto; border: 1px solid var(--ink); }
+.story-photo {
+  padding: 6px 6px 10px;
+  border: 1px solid var(--ink);
+  background: var(--paper-light);
+  box-shadow: 8px 9px 0 rgba(23, 23, 20, .14);
+}
+.story-photo img { display: block; width: 100%; height: auto; }
 .story-photo figcaption {
   display: flex;
   justify-content: space-between;
   gap: 20px;
-  padding-top: 10px;
+  padding: 10px 3px 0;
   font-family: var(--font-geist-mono), monospace;
   font-size: 8px;
   text-transform: uppercase;
@@ -388,7 +398,7 @@ footer {
   .section-label { display: flex; gap: 14px; padding: 0; }
   .section-label span { margin: 0; }
   .section-label p { max-width: none; }
-  .story-layout { grid-template-columns: 1fr; }
+  .story-layout { grid-template-columns: 1fr; gap: 42px; }
   .story-copy { max-width: 760px; }
   .music-layout { grid-template-columns: 1fr; }
   .photo-grid { grid-template-columns: 1fr 1fr; }
@@ -417,12 +427,14 @@ footer {
   .hero-summary p:nth-child(2) { display: none; }
   .hero-summary a { justify-self: start; }
   .archive-section { padding: 78px 20px; }
-  .lead { font-size: clamp(43px, 13vw, 64px); }
+  .lead { font-size: clamp(43px, 13vw, 64px); line-height: 1; }
   .section-heading { display: block; margin-bottom: 44px; }
   .section-heading h2 { font-size: clamp(48px, 14vw, 70px); }
   .section-heading > p { width: auto; max-width: 420px; margin-top: 25px; }
-  .story-layout { margin-top: 52px; gap: 45px; }
-  blockquote { margin-top: 40px; }
+  .story-layout { margin-top: 42px; padding-top: 24px; gap: 36px; }
+  .story-copy { padding-right: 0; }
+  .story-copy > p:first-child { font-size: 17px; }
+  blockquote { margin-top: 36px; }
   .music-layout { gap: 36px; }
   .track { grid-template-columns: 30px 1fr auto; }
   .track > b { display: none; }
