@@ -58,8 +58,17 @@ export default function Home() {
             <span>Tokyo, Japan / 2002—</span>
           </div>
           <div className="hero-title-lockup">
-            <h1 id="hero-title"><span>sus</span><span>quatch</span></h1>
-            <p className="hero-note"><span>file under:</span>songs that<br />refuse to sit still</p>
+            <div className="hero-title-copy">
+              <h1 id="hero-title"><span>sus</span><span>quatch</span></h1>
+              <p className="hero-note"><span>file under:</span>songs that<br />refuse to sit still</p>
+            </div>
+            <figure className="hero-live-photo">
+              <img src="/media/susquatch-live-facebook.png" alt="Susquatch performing live on stage" />
+              <figcaption>
+                <span>Live archive</span>
+                <a href="https://www.facebook.com/photo/?fbid=334427149940618&set=pb.100076094156377.-2207520000" target="_blank" rel="noreferrer">Original post ↗</a>
+              </figcaption>
+            </figure>
           </div>
           <div className="hero-rule" />
           <div className="hero-summary">
