@@ -103,20 +103,36 @@ export default function Home() {
       <section className="archive-section music" id="music">
         <SectionLabel number="02">Listen here</SectionLabel>
         <div className="section-content">
-          <div className="section-heading">
+          <div className="section-heading music-heading">
             <h2>Start with<br /><em>In This World.</em></h2>
-            <p>The band’s 2009 album is the clearest doorway into its melodic, restless sound.</p>
+            <div className="music-intro">
+              <span>2009 / full-length</span>
+              <p>The clearest doorway into the band’s melodic, restless sound. Start here, then follow the guitars outward.</p>
+            </div>
           </div>
           <div className="music-layout">
-            <iframe
-              className="spotify-player"
-              title="Listen to In This World by susquatch on Spotify"
-              src="https://open.spotify.com/embed/album/0DKsw8XT9NGCvZdlHeCjJ5?utm_source=generator&theme=0"
-              width="100%"
-              height="352"
-              loading="lazy"
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-            />
+            <div className="album-feature">
+              <div className="album-identity">
+                <div className="album-cover">
+                  <Image src="/media/in-this-world.jpg" alt="In This World album cover" fill sizes="(max-width: 720px) 38vw, (max-width: 980px) 260px, 18vw" />
+                </div>
+                <div className="album-details">
+                  <p>Album 03 / K-PLAN</p>
+                  <h3>In This World</h3>
+                  <p>Ten songs<br />Released in 2009</p>
+                  <a href={apple} target="_blank" rel="noreferrer">Open the record ↗</a>
+                </div>
+              </div>
+              <iframe
+                className="spotify-player"
+                title="Listen to In This World by susquatch on Spotify"
+                src="https://open.spotify.com/embed/album/0DKsw8XT9NGCvZdlHeCjJ5?utm_source=generator&theme=0"
+                width="100%"
+                height="152"
+                loading="lazy"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              />
+            </div>
             <div className="track-list">
               <p className="list-kicker">Three songs to begin</p>
               {tracks.map((track) => (
