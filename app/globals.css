@@ -126,9 +126,6 @@ figure { margin: 0; }
 .hero h1 span { display: block; }
 .hero h1 span:last-child {
   margin-left: 9vw;
-  color: transparent;
-  -webkit-text-stroke: 2px var(--ink);
-  letter-spacing: 0;
 }
 .hero-note {
   position: absolute;
@@ -378,7 +375,7 @@ footer {
   .hero-meta span:last-child { text-align: right; }
   .hero-title-lockup { padding-block: 42px; }
   .hero h1 { font-size: clamp(86px, 23vw, 160px); line-height: .7; }
-  .hero h1 span:last-child { margin-left: 0; -webkit-text-stroke-width: 1.5px; }
+  .hero h1 span:last-child { margin-left: 0; }
   .hero-note { display: none; }
   .hero-summary { grid-template-columns: 1fr; align-items: start; gap: 22px; }
   .hero-summary p:nth-child(2) { display: none; }
