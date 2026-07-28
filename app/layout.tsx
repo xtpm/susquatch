@@ -8,19 +8,19 @@ const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"]
 export const metadata: Metadata = {
   metadataBase: new URL("https://susquatch.net"),
   title: "susquatch — an independent archive",
-  description: "The music, history and long echo of Tokyo's susquatch.",
+  description: "A rough-cut listening archive for Tokyo's susquatch.",
   openGraph: {
     title: "susquatch — an independent archive",
-    description: "Intricate guitars. Impossible drums. Melodies that never left.",
+    description: "A rough-cut listening archive for songs that refuse to sit still.",
     url: "https://susquatch.net",
     siteName: "susquatch archive",
-    images: [{ url: "/og.png", width: 1731, height: 909, alt: "susquatch — an independent archive" }],
+    images: [{ url: "/og.png", width: 1536, height: 1024, alt: "susquatch — an independent archive" }],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "susquatch — an independent archive",
-    description: "Intricate guitars. Impossible drums. Melodies that never left.",
+    description: "A rough-cut listening archive for songs that refuse to sit still.",
     images: ["/og.png"],
   },
 };
