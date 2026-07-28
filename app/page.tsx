@@ -55,10 +55,6 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="tape-strip" aria-hidden="true">
-        <span>SUSQUATCH / INDEPENDENT ARCHIVE / LISTEN LOUD / SUSQUATCH / INDEPENDENT ARCHIVE / LISTEN LOUD</span>
-      </div>
-
       <section className="story section" id="story">
         <div className="section-label"><span>[01]</span><p>background<br />notes</p></div>
         <div className="story-copy">
