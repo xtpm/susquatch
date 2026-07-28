@@ -297,7 +297,8 @@ blockquote cite {
 .story-photo figcaption a { border-bottom: 1px solid; }
 
 @media (min-width: 981px) {
-  .story {
+  .story,
+  .music {
     grid-template-columns: 80px minmax(0, 1fr);
     gap: clamp(24px, 2vw, 36px);
   }
