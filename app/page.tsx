@@ -96,10 +96,23 @@ export default function Home() {
                 <cite>Kenta Oshikiri, paraphrased from CINRA, 2009</cite>
               </blockquote>
             </div>
-            <figure className="story-photo">
-              <Image src="/media/band-2007.jpg" alt="The four members of susquatch standing beneath bare trees" width={885} height={541} sizes="(max-width: 900px) 100vw, 52vw" priority />
-              <figcaption><span>susquatch, 2007</span><a href="https://rooftop1976.com/interview/070501142301.php" target="_blank" rel="noreferrer">Photo: Rooftop ↗</a></figcaption>
-            </figure>
+            <div className="story-rail">
+              <figure className="story-photo">
+                <Image src="/media/band-2007.jpg" alt="The four members of susquatch standing beneath bare trees" width={885} height={541} sizes="(max-width: 900px) 100vw, 52vw" priority />
+                <figcaption><span>susquatch, 2007</span><a href="https://rooftop1976.com/interview/070501142301.php" target="_blank" rel="noreferrer">Photo: Rooftop ↗</a></figcaption>
+              </figure>
+              <aside className="story-facts" aria-label="Susquatch field notes">
+                <p className="story-facts-kicker">[ Field notes ]</p>
+                <p className="story-facts-title">A short catalogue,<br /><em>a long echo.</em></p>
+                <dl>
+                  <div><dt>Origin</dt><dd>Tokyo, Japan</dd></div>
+                  <div><dt>Formed</dt><dd>2002</dd></div>
+                  <div><dt>Core</dt><dd>Kenta Oshikiri<br />Maki Nakano</dd></div>
+                  <div><dt>Sound</dt><dd>Math rock<br />Post-hardcore<br />Jazz</dd></div>
+                </dl>
+                <a href="#music">Continue listening <span aria-hidden="true">↓</span></a>
+              </aside>
+            </div>
           </div>
         </div>
       </section>
