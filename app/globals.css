@@ -297,6 +297,13 @@ blockquote cite {
 }
 .story-photo figcaption a { border-bottom: 1px solid; }
 
+@media (min-width: 981px) {
+  .story {
+    padding-left: max(8vw, calc((100vw - 1460px) / 2 + 40px));
+    padding-right: max(3vw, calc((100vw - 1600px) / 2));
+  }
+}
+
 .music { background: #d3c9b6; }
 .music-layout { display: grid; grid-template-columns: minmax(340px, .9fr) minmax(440px, 1.1fr); gap: clamp(42px, 6vw, 90px); align-items: start; }
 .spotify-player { display: block; border: 1px solid var(--ink); background: var(--ink); }
