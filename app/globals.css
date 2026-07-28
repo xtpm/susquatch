@@ -298,7 +298,8 @@ blockquote cite {
 
 @media (min-width: 981px) {
   .story,
-  .music {
+  .music,
+  .photos {
     grid-template-columns: 80px minmax(0, 1fr);
     gap: clamp(24px, 2vw, 36px);
   }
