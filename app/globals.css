@@ -128,6 +128,7 @@ figure { margin: 0; }
   margin-left: 9vw;
   color: transparent;
   -webkit-text-stroke: 2px var(--ink);
+  letter-spacing: -.035em;
 }
 .hero-note {
   position: absolute;
