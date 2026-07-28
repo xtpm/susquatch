@@ -346,6 +346,51 @@ blockquote cite {
 .photo-grid figure:not(.photo-wide) img { aspect-ratio: 2 / 3; }
 .photo-grid figcaption { padding-top: 9px; font-family: var(--font-geist-mono), monospace; font-size: 8px; text-transform: uppercase; letter-spacing: .06em; }
 .source-link { margin-top: 28px; }
+.facebook-archive {
+  margin-top: clamp(68px, 7vw, 106px);
+  padding-top: 18px;
+  border-top: 2px solid var(--ink);
+}
+.facebook-archive-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 20px;
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 8px;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+.facebook-archive-heading p { margin: 0; }
+.facebook-archive-heading a { padding-bottom: 4px; border-bottom: 1px solid; }
+.facebook-photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+.facebook-photo-grid figure { min-width: 0; }
+.facebook-photo-grid figure > a { display: block; overflow: hidden; }
+.facebook-photo-grid img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border: 1px solid var(--ink);
+  filter: saturate(.82) contrast(1.04);
+  transition: transform .3s ease, filter .3s ease;
+}
+.facebook-photo-grid a:hover img { transform: scale(1.015); filter: saturate(1) contrast(1.04); }
+.facebook-photo-grid figcaption {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 9px;
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 7px;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
 
 .discography { background: var(--paper); }
 .release-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 58px 26px; }
@@ -414,6 +459,7 @@ footer {
   .photo-grid { grid-template-columns: 1fr 1fr; }
   .photo-wide { grid-column: 1 / -1; }
   .photo-grid figure:not(.photo-wide) img { aspect-ratio: 4 / 5; }
+  .facebook-photo-grid { grid-template-columns: 1fr 1fr; }
   .release-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .language-layout, .history-layout { grid-template-columns: 1fr; }
   .lineup { position: static; }
@@ -450,6 +496,8 @@ footer {
   .track > b { display: none; }
   .stream-links { justify-content: flex-start; }
   .photo-grid { gap: 12px; }
+  .facebook-archive-heading { align-items: flex-start; flex-direction: column; gap: 12px; }
+  .facebook-photo-grid { grid-template-columns: 1fr; gap: 28px; }
   .release-grid { grid-template-columns: 1fr; gap: 48px; }
   .release { max-width: 520px; }
   .language h2 { font-size: clamp(52px, 15vw, 74px); }

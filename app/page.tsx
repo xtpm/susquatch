@@ -158,6 +158,32 @@ export default function Home() {
             </figure>
           </div>
           <a className="source-link" href="https://www.cinra.net/article/interview-2009-06-05-000000-php" target="_blank" rel="noreferrer">View the original CINRA interview ↗</a>
+          <div className="facebook-archive">
+            <div className="facebook-archive-heading">
+              <p>From the Facebook archive</p>
+              <a href="https://www.facebook.com/susquatchband/photos" target="_blank" rel="noreferrer">View the band’s photos ↗</a>
+            </div>
+            <div className="facebook-photo-grid">
+              <figure>
+                <a href="https://www.facebook.com/photo.php?fbid=334428116607188&set=pb.100076094156377.-2207520000&type=3" target="_blank" rel="noreferrer">
+                  <Image src="/media/facebook-fukui-live.jpg" alt="Two musicians onstage under purple and orange lights" width={1296} height={864} sizes="(max-width: 720px) 100vw, (max-width: 980px) 50vw, 30vw" />
+                </a>
+                <figcaption><span>FukuiCHOP / March 2012</span><span>Facebook ↗</span></figcaption>
+              </figure>
+              <figure>
+                <a href="https://www.facebook.com/photo/?fbid=334427149940618&set=pb.100076094156377.-2207520000" target="_blank" rel="noreferrer">
+                  <Image src="/media/susquatch-live-facebook.png" alt="Susquatch guitarist jumping during a live performance" width={1296} height={864} sizes="(max-width: 720px) 100vw, (max-width: 980px) 50vw, 30vw" />
+                </a>
+                <figcaption><span>Live performance / March 2012</span><span>Facebook ↗</span></figcaption>
+              </figure>
+              <figure>
+                <a href="https://www.facebook.com/photo.php?fbid=334427749940558&set=pb.100076094156377.-2207520000&type=3" target="_blank" rel="noreferrer">
+                  <Image src="/media/facebook-waka-pedals.jpg" alt="Guitar pedals and cables on a venue stage" width={1296} height={864} sizes="(max-width: 720px) 100vw, (max-width: 980px) 50vw, 30vw" />
+                </a>
+                <figcaption><span>Waka’s pedals / March 2012</span><span>Facebook ↗</span></figcaption>
+              </figure>
+            </div>
+          </div>
         </div>
       </section>
 
