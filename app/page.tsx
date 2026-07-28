@@ -67,12 +67,12 @@ export default function Home() {
             <p>Formed in Tokyo in October 2002, susquatch built songs from interlocking guitars, abrupt rhythmic turns and a melodic instinct rooted in Japanese pop. The complexity was never the destination. Feeling was.</p>
             <p>Contemporary writers called it emotional guitar rock. Listeners finding the band today hear math rock, emo and jazz in the same motion. Both descriptions land somewhere near the truth.</p>
           </div>
+          <p className="margin-note">melody first.<br />everything else can wander.</p>
           <blockquote>
             <span className="quote-mark" aria-hidden="true">“</span>
             I don’t want a song you can let pass without anything catching you.
             <cite>— Kenta Oshikiri, paraphrased from CINRA, 2009</cite>
           </blockquote>
-          <p className="margin-note">melody first.<br />everything else can wander.</p>
         </div>
       </section>
 
