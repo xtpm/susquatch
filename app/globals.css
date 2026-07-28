@@ -247,6 +247,7 @@ figure { margin: 0; }
 .section-heading > p { width: 260px; margin: 0; font-size: 14px; line-height: 1.55; }
 
 .story { background: var(--paper); }
+.story .section-content { padding-left: clamp(18px, 2vw, 34px); }
 .story-layout {
   display: grid;
   grid-template-columns: minmax(300px, .9fr) minmax(420px, 1.1fr);
@@ -395,6 +396,7 @@ footer {
   .hero-summary { grid-template-columns: 1fr auto; }
   .hero-summary p:nth-child(2) { display: none; }
   .archive-section { grid-template-columns: 1fr; gap: 48px; }
+  .story .section-content { padding-left: 0; }
   .section-label { display: flex; gap: 14px; padding: 0; }
   .section-label span { margin: 0; }
   .section-label p { max-width: none; }
