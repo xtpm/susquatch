@@ -17,7 +17,7 @@ const collections = [
     description: "The old pc.htm link lives again. Watch surviving footage from Next Music from Tokyo vol. 2.",
     image: "/media/susquatch-live-facebook.png",
     alt: "Susquatch performing live on stage",
-    href: "/pc.htm",
+    href: "/archive/performances",
   },
   {
     number: "02",
@@ -26,7 +26,7 @@ const collections = [
     description: "Demos, singles, mini albums and both full-length records, gathered in chronological order.",
     image: "/media/in-this-world.jpg",
     alt: "In This World album artwork",
-    href: "/#records",
+    href: "/archive/recordings",
   },
   {
     number: "03",
@@ -35,7 +35,7 @@ const collections = [
     description: "Rooftop, CINRA and Facebook photographs retained with links to their original context.",
     image: "/media/band-2009.jpg",
     alt: "Susquatch photographed at night in 2009",
-    href: "/#photos",
+    href: "/archive/photographs",
   },
   {
     number: "04",
@@ -44,19 +44,19 @@ const collections = [
     description: "The band’s formation, sound, documented lineup and the publication trail behind this archive.",
     image: "/media/kenta-2009-a.jpg",
     alt: "Kenta Oshikiri during a 2009 interview",
-    href: "/#story",
+    href: "/archive/background",
   },
 ] as const;
 
 const register = [
-  ["2002", "Formation", "Tokyo, Japan", "/#story"],
-  ["2003", "1st Demo", "EP / four tracks", "/#records"],
-  ["2004", "Plum / Ceto", "Single", "/#records"],
-  ["2007", "Water Plant", "Mini album", "/#records"],
-  ["2009", "In This World", "First full-length", "/#music"],
-  ["2010", "Next Music from Tokyo", "Canada / recovered footage", "/pc.htm"],
-  ["2011", "Toy Box Brain", "Second full-length", "/#records"],
-  ["2012", "4th", "Single / final documented release", "/#records"],
+  ["2002", "Formation", "Tokyo, Japan", "/archive/background"],
+  ["2003", "1st Demo", "EP / four tracks", "/archive/recordings"],
+  ["2004", "Plum / Ceto", "Single", "/archive/recordings"],
+  ["2007", "Water Plant", "Mini album", "/archive/recordings"],
+  ["2009", "In This World", "First full-length", "/archive/recordings"],
+  ["2010", "Next Music from Tokyo", "Canada / recovered footage", "/archive/performances"],
+  ["2011", "Toy Box Brain", "Second full-length", "/archive/recordings"],
+  ["2012", "4th", "Single / final documented release", "/archive/recordings"],
 ] as const;
 
 export default function ArchivePage() {
