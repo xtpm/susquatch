@@ -47,6 +47,7 @@ export default function Home() {
           <a href="#music">[ listen ]</a>
           <a href="#photos">[ photos ]</a>
           <a href="#records">[ records ]</a>
+          <a href="/archive">[ archive ]</a>
         </nav>
         <a className="header-listen" href={spotify} target="_blank" rel="noreferrer">listen ↗</a>
       </header>
