@@ -32,12 +32,29 @@
 }
 
 .archiveLink {
+  position: relative;
   justify-self: end;
-  padding: 5px 0;
-  border-bottom: 1px solid transparent;
+  padding: 7px 0;
+  transition: color 180ms ease, transform 160ms cubic-bezier(.22, 1, .36, 1);
 }
 
-.archiveLink:hover { border-color: currentColor; }
+.archiveLink::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 3px;
+  left: 0;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 220ms cubic-bezier(.22, 1, .36, 1);
+}
+
+.archiveLink:hover::after,
+.archiveLink:focus-visible::after { transform: scaleX(1); transform-origin: left; }
+.archiveLink:active { transform: translateY(2px) scale(.94); }
+.archiveLink:focus-visible { outline: 1px solid currentColor; outline-offset: 5px; }
 
 .hero {
   min-height: calc(100svh - 62px);

@@ -27,10 +27,39 @@
   letter-spacing: -.055em;
 }
 
-.header nav { display: flex; gap: 28px; }
-.header nav a, .header nav span, .recoveredLink { padding: 5px 0; border-bottom: 1px solid transparent; }
-.header nav a:hover, .recoveredLink:hover { border-color: currentColor; }
-.header nav span { color: var(--paper-dark); border-color: var(--paper-dark); }
+.header nav {
+  display: flex;
+  gap: 28px;
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+  transition: opacity 240ms ease, transform 240ms cubic-bezier(.22, 1, .36, 1), visibility 0s linear;
+}
+.header nav a, .header nav span, .recoveredLink {
+  position: relative;
+  padding: 7px 0;
+  transition: color 180ms ease, opacity 180ms ease, transform 160ms cubic-bezier(.22, 1, .36, 1);
+}
+.header nav a::after, .recoveredLink::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 3px;
+  left: 0;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 220ms cubic-bezier(.22, 1, .36, 1);
+}
+.header nav a:hover::after, .recoveredLink:hover::after,
+.header nav a:focus-visible::after, .recoveredLink:focus-visible::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.header nav a:active, .recoveredLink:active { transform: translateY(2px) scale(.94); }
+.header nav a:focus-visible, .recoveredLink:focus-visible { outline: 1px solid currentColor; outline-offset: 5px; }
+.header nav span { color: var(--paper-dark); border-bottom: 1px solid var(--paper-dark); }
 .recoveredLink { justify-self: end; }
 
 .hero {
@@ -130,7 +159,16 @@
 
 @media (max-width: 720px) {
   .header { grid-template-columns: 1fr auto; padding: 0 20px; }
-  .header nav { display: none; }
+  .header nav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, calc(-50% - 7px));
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 220ms ease, transform 220ms cubic-bezier(.22, 1, .36, 1), visibility 0s linear 220ms;
+  }
   .hero { grid-template-columns: 1fr; gap: 42px; padding: 62px 20px 72px; }
   .heroMeta { display: flex; justify-content: space-between; }
   .heroTitle h1 { font-size: clamp(78px, 24vw, 120px); }
