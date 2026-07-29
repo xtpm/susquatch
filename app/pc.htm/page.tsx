@@ -11,6 +11,12 @@ const recoveredPerformances = [
     duration: "4:36",
     number: "02",
   },
+  {
+    id: "FybCCpFmoKg",
+    title: "3 chords",
+    duration: "5:01",
+    number: "03",
+  },
 ];
 
 export const metadata: Metadata = {
