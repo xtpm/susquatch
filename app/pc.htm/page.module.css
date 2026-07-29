@@ -195,6 +195,101 @@
 
 .context dd a { border-bottom: 1px solid; }
 
+.more {
+  padding: clamp(84px, 8vw, 130px) max(5vw, calc((100vw - 1540px) / 2));
+  background: var(--paper-light);
+}
+
+.moreHeading {
+  display: grid;
+  grid-template-columns: 1fr 290px;
+  align-items: end;
+  gap: clamp(52px, 8vw, 130px);
+  margin-bottom: 58px;
+}
+
+.moreHeading > div > p {
+  margin: 0 0 26px;
+  color: var(--rust);
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 8px;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+}
+
+.moreHeading h2 {
+  margin: 0;
+  font-family: var(--font-geist-sans), Arial, sans-serif;
+  font-size: clamp(52px, 6vw, 94px);
+  font-weight: 670;
+  line-height: .86;
+  letter-spacing: -.07em;
+}
+
+.moreHeading h2 em {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+}
+
+.moreHeading > p {
+  margin: 0 0 5px;
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.performanceGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(28px, 3vw, 48px);
+  border-top: 1px solid var(--ink);
+  padding-top: 28px;
+}
+
+.performanceCard {
+  padding: 7px 7px 14px;
+  border: 1px solid var(--ink);
+  background: var(--paper);
+  box-shadow: 9px 10px 0 var(--paper-dark);
+}
+
+.cardVideo {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: var(--ink);
+}
+
+.cardVideo iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.cardCaption {
+  display: grid;
+  grid-template-columns: 34px 1fr auto auto;
+  align-items: end;
+  gap: 16px;
+  padding: 15px 5px 0;
+}
+
+.cardCaption > span,
+.cardCaption p,
+.cardCaption time,
+.cardCaption > a {
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 8px;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+.cardCaption p,
+.cardCaption h3 { margin: 0; }
+.cardCaption h3 { margin-top: 4px; font-family: var(--font-geist-sans), Arial, sans-serif; font-size: 25px; letter-spacing: -.045em; }
+.cardCaption > a { padding-bottom: 3px; border-bottom: 1px solid; }
+
 .footer {
   display: flex;
   align-items: center;
@@ -230,6 +325,8 @@
   .hero { grid-template-columns: 1fr; min-height: auto; }
   .intro { min-height: 560px; }
   .performance { max-width: 820px; }
+  .performanceGrid { grid-template-columns: 1fr; }
+  .performanceCard { max-width: 820px; }
 }
 
 @media (max-width: 720px) {
@@ -248,5 +345,10 @@
   .context dl div:not(:nth-child(3n + 1)) { padding-left: 0; border-left: 0; }
   .context dl div:nth-child(even) { padding-left: 16px; border-left: 1px solid rgba(23, 23, 20, .4); }
   .context dd { font-size: 20px; }
+  .more { padding: 72px 20px 84px; }
+  .moreHeading { grid-template-columns: 1fr; gap: 28px; margin-bottom: 42px; }
+  .moreHeading > p { max-width: 420px; }
+  .cardCaption { grid-template-columns: 28px 1fr auto auto; gap: 10px; }
+  .cardCaption h3 { font-size: 21px; }
   .footer { align-items: flex-start; flex-direction: column; padding: 40px 20px; }
 }

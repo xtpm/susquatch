@@ -4,6 +4,15 @@ import styles from "./page.module.css";
 
 const youtubeUrl = "https://www.youtube.com/watch?v=SibtUxBSBzg";
 
+const recoveredPerformances = [
+  {
+    id: "ukktVZAvAmk",
+    title: "harvest",
+    duration: "4:36",
+    number: "02",
+  },
+];
+
 export const metadata: Metadata = {
   title: "Spin The Words — Vancouver, 2010 | susquatch archive",
   description: "A recovered susquatch.net link: Spin The Words live at the Biltmore Cabaret during Next Music from Tokyo vol. 2.",
@@ -63,6 +72,37 @@ export default function RecoveredPcPage() {
           <div><dt>Tour</dt><dd>Next Music from Tokyo<br />Volume 2</dd></div>
           <div><dt>Uploaded by</dt><dd><a href="https://www.youtube.com/@dbl11down11" target="_blank" rel="noreferrer">dbl11down11 ↗</a></dd></div>
         </dl>
+      </section>
+
+      <section className={styles.more} aria-labelledby="more-performances">
+        <div className={styles.moreHeading}>
+          <div>
+            <p>[ Recovered tape / 02 ]</p>
+            <h2 id="more-performances">More from<br /><em>the same night.</em></h2>
+          </div>
+          <p>Additional performances from susquatch&apos;s stop at the Biltmore Cabaret, preserved by the same uploader.</p>
+        </div>
+
+        <div className={styles.performanceGrid}>
+          {recoveredPerformances.map((performance) => (
+            <article className={styles.performanceCard} key={performance.id}>
+              <div className={styles.cardVideo}>
+                <iframe
+                  src={`https://www.youtube-nocookie.com/embed/${performance.id}?rel=0`}
+                  title={`Susquatch performing ${performance.title} at the Biltmore Cabaret in 2010`}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                />
+              </div>
+              <div className={styles.cardCaption}>
+                <span>{performance.number}</span>
+                <div><p>Next Music from Tokyo vol. 2</p><h3>“{performance.title}”</h3></div>
+                <time>{performance.duration}</time>
+                <a href={`https://www.youtube.com/watch?v=${performance.id}`} target="_blank" rel="noreferrer" aria-label={`Watch ${performance.title} on YouTube`}>↗</a>
+              </div>
+            </article>
+          ))}
+        </div>
       </section>
 
       <footer className={styles.footer}>
